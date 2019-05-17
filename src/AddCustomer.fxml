@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="990.0" style="-fx-background-color: #ff5252;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddCustomerController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/V6AWYS.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="136.0" layoutY="53.0" opacity="0.78" prefHeight="550.0" prefWidth="885.0" style="-fx-background-color: White; -fx-background-radius: 8;">
+         <children>
+            <TextField fx:id="cusid" layoutX="245.0" layoutY="44.0" opacity="0.0" prefHeight="45.0" prefWidth="300.0" promptText="User ID" style="-fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cusname" layoutX="245.0" layoutY="153.0" prefHeight="45.0" prefWidth="300.0" promptText="Username" style="-fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cusphone" layoutX="245.0" layoutY="358.0" prefHeight="45.0" prefWidth="300.0" promptText="Phone" style="-fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="add" focusTraversable="false" layoutX="426.0" layoutY="480.0" mnemonicParsing="false" onAction="#AddCustomer" prefHeight="40.0" prefWidth="117.0" styleClass="button1" text="Добавить">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="" layoutX="25.0" layoutY="329.0" prefHeight="40.0" prefWidth="300.0" textFill="#f50000">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="52.0" opacity="0.0" text="Личный номер">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="161.0" text="ФИО">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="236.0" text="коментарии">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="366.0" text="телефон">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cusemail" layoutX="245.0" layoutY="303.0" prefHeight="45.0" prefWidth="300.0" promptText="Email" style="-fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="30.0" layoutY="311.0" text="Email">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="balance" layoutX="245.0" layoutY="413.0" prefHeight="45.0" prefWidth="300.0" promptText="Balance" style="-fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="30.0" layoutY="421.0" text="номер__?">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="userimage" fitHeight="186.0" fitWidth="248.0" layoutX="610.0" layoutY="28.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/usericon1.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="cuspass" layoutX="245.0" layoutY="98.0" prefHeight="45.0" prefWidth="300.0" promptText="Password" style="-fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="30.0" layoutY="106.0" text="Passwпарольord">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="addcusconfirm" layoutX="30.0" layoutY="480.0" prefHeight="45.0" prefWidth="389.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <TextArea fx:id="cusaddress" focusTraversable="false" layoutX="245.0" layoutY="208.0" prefHeight="85.0" prefWidth="275.0" promptText="Address" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+      <Button fx:id="browse" layoutX="893.0" layoutY="13.0" mnemonicParsing="false" onAction="#ChooseFile" opacity="0.0" prefHeight="40.0" prefWidth="95.0" text="Browse" />
+   </children>
+</AnchorPane>

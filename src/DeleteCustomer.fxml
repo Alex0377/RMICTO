@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="990.0" style="-fx-background-color: #880E4F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditCustomerController">
+   <children>
+      <ImageView fitHeight="723.0" fitWidth="1160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/V6AWYS.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="136.0" layoutY="60.0" opacity="0.84" prefHeight="550.0" prefWidth="885.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="confirmation" layoutX="35.0" layoutY="460.0" prefHeight="45.0" prefWidth="360.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cusid" layoutX="225.0" layoutY="65.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-radius: 20; -fx-border-color: #880E4F; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="cusname" editable="false" layoutX="225.0" layoutY="120.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-radius: 20; -fx-border-color: #880E4F; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="cusemail" editable="false" layoutX="225.0" layoutY="272.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-radius: 20; -fx-border-color: #880E4F; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="cusphone" editable="false" layoutX="225.0" layoutY="327.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-radius: 20; -fx-border-color: #880E4F; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="cusbalance" editable="false" layoutX="225.0" layoutY="382.0" opacity="0.0" prefHeight="45.0" prefWidth="300.0" style="-fx-background-radius: 22; -fx-border-radius: 20; -fx-border-color: #880E4F; -fx-border-width: 2;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <Button fx:id="load" layoutX="550.0" layoutY="66.0" mnemonicParsing="false" onAction="#LoadCusInfo" prefHeight="40.0" prefWidth="75.0" text="вывести" />
+            <Button layoutX="435.0" layoutY="465.0" mnemonicParsing="false" onAction="#DeleteCusInfo" prefHeight="40.0" prefWidth="90.0" text="удалить" />
+            <ImageView fx:id="cusimage" fitHeight="186.0" fitWidth="248.0" layoutX="733.0" layoutY="7.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+
+            </ImageView>
+            <Label layoutX="35.0" layoutY="70.0" text="Номер мастера" textFill="#880e4f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="130.0" text="ФИО" textFill="#880e4f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="205.0" text="коментарии" textFill="#880e4f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="335.0" text="телефон" textFill="#880e4f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="280.0" text="Email" textFill="#880e4f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="390.0" opacity="0.0" text="Balance" textFill="#880e4f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="cusaddress" editable="false" layoutX="225.0" layoutY="176.0" prefHeight="85.0" prefWidth="275.0" promptText="Address" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

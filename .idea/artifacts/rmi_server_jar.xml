@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="rmi-server:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/rmi_server_jar</output-path>
+    <root id="root">
+      <element id="archive" name="rmi-server.jar">
+        <element id="module-output" name="rmi-server" />
+      </element>
+      <element id="library" level="project" name="sqlite-jdbc-3.7.2" />
+    </root>
+  </artifact>
+</component>
