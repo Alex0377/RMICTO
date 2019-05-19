@@ -85,9 +85,7 @@
                </font>
             </Label>
             <ImageView fx:id="userimage" fitHeight="186.0" fitWidth="248.0" layoutX="610.0" layoutY="28.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@icons/usericon1.png" />
-               </image>
+
             </ImageView>
             <TextField fx:id="cuspass" layoutX="245.0" layoutY="98.0" prefHeight="45.0" prefWidth="300.0" promptText="Password" style="-fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 20;">
                <font>
@@ -110,6 +108,5 @@
             </TextArea>
          </children>
       </Pane>
-      <Button fx:id="browse" layoutX="893.0" layoutY="13.0" mnemonicParsing="false" onAction="#ChooseFile" opacity="0.0" prefHeight="40.0" prefWidth="95.0" text="Browse" />
-   </children>
+      </children>
 </AnchorPane>

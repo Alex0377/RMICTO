@@ -39,7 +39,7 @@ public class AddCustomerController implements Initializable {
     @FXML
     private TextField cuspass;
     private FileInputStream fis;
-    int cf;
+    private  int cf;
 
 
 
@@ -57,7 +57,7 @@ public class AddCustomerController implements Initializable {
     }
 
 
-    int x=0;
+  private   int x=0;
     @FXML
     public void AddCustomer(ActionEvent event) throws SQLException, FileNotFoundException {
         try {
@@ -68,8 +68,9 @@ public class AddCustomerController implements Initializable {
             ResultSet rs2 = ps2.executeQuery();
 
             x++;
+try {
+    int y=Integer.parseInt(rs2.getString(x));
 
-            int y=Integer.parseInt(rs2.getString(x));
             y++;
             System.out.println(y);
 
@@ -100,7 +101,13 @@ public class AddCustomerController implements Initializable {
                         ps.close();
                       JDBC.closeConnection();
 
+}
+catch (Exception e)
+{
 
+    addcusconfirm.setText("Please Enter Everything Correctly");
+
+}
 
         } catch (NumberFormatException e) {
             addcusconfirm.setText("Please Enter Everything Correctly");

@@ -44,7 +44,7 @@ public class EditCustomerController implements Initializable {
     private FileInputStream fis;
     @FXML
     private Button chosepic;
-    int cp;
+  private   int cp;
     @FXML
     private Label confirmation;
     @FXML

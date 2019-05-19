@@ -20,11 +20,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 
-/**
- *
- * класс контроллер fxml страницы обрабатывет все действия на AdminPageC
- *
- */
+
 public class AdminPageController implements Initializable {
 
      @FXML

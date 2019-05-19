@@ -62,7 +62,7 @@ public class AccountInfoController implements Initializable {
 
 
     public void AccountInfo(ActionEvent event) throws SQLException{
-        Connection con = DbConnection.Connection();
+        Connection con = JDBC.getConnection();
         PreparedStatement ps = null;
         ResultSet rs = null;
         ps = con.prepareStatement("SELECT * FROM users WHERE id = ?");

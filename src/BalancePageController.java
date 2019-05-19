@@ -132,7 +132,12 @@ private TextField cusid;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }
-private String nomerIdFokys;
+
+    private   static String name;
+    private String nomerIdFokys;
+    private  static   int fokyss;
+    private static String  nameUsrIid;
+
 
     public String getNomerIdFokys() {
         return nomerIdFokys;
@@ -146,13 +151,11 @@ private String nomerIdFokys;
     public void getUserID(String Id) {
         UserID = Id;
     }
-  static   int fokyss;
 
   static   public int setFak(int x) {
         fokyss = x;
         return x;
     }
-
     static   public int getFak() {
 
         return fokyss;
@@ -170,7 +173,6 @@ private String nomerIdFokys;
 
 
 
-static String  nameUsrIid;
 
 
     @FXML
@@ -332,7 +334,7 @@ public  void perehod()throws IOException, SQLException{
     stage.show();
 }
 
-    int ЯЯ=0;
+  private   int operationsCounter=0;
     @FXML
     public void AddCustomerrRMI(String name,String name1,String name2,String name3,String name4) throws SQLException, FileNotFoundException {//функция вызывается клиентом
 
@@ -341,9 +343,11 @@ public  void perehod()throws IOException, SQLException{
             dataKlientt = FXCollections.observableArrayList();
             PreparedStatement ps = JDBC.getConnection().prepareStatement("SELECT max (nomer) FROM klient ");
             ResultSet rs = ps.executeQuery();
-            ЯЯ++;
 
-            int y=Integer.parseInt(rs.getString(ЯЯ));
+
+            operationsCounter++;
+
+            int y=Integer.parseInt(rs.getString(operationsCounter));
             y++;
       //      System.out.println(y);
             PreparedStatement ps2 = JDBC.getConnection().prepareStatement("INSERT INTO klient  VALUES (?,?,?,?,?,?,?)");
@@ -383,7 +387,6 @@ public  void perehod()throws IOException, SQLException{
     }
 
 
-    static String name;
 
 
     @FXML

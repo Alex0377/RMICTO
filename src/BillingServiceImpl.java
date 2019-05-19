@@ -27,10 +27,7 @@ import static java.lang.String.valueOf;
 import static java.lang.Thread.sleep;
 import static javafx.application.Application.launch;
 
-/**
- * класс старта сервера
- * и описание интерфейса  методы которые вызыввет клиент
- */
+
 public class BillingServiceImpl extends UnicastRemoteObject implements BillingService
 {
 

@@ -2,7 +2,7 @@ import java.util.Random;
 
 
 public class Quotes {
-    String quote ;
+   private String quote ;
 
 
     public String returnQuotes(){
